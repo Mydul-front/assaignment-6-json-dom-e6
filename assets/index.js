@@ -40,6 +40,7 @@ const displayBtn = (btns) => {
   btns.forEach((singleButton) => {
     console.log(singleButton);
     const btnContainer = document.getElementById("btnContainer");
+    btnContainer.innerHTML='';
     const div = document.createElement("div");
     div.innerHTML = `
           <div class="card w-96 bg-base-100 card-md shadow-sm">
@@ -61,6 +62,29 @@ const displayBtn = (btns) => {
     btnContainer.appendChild(div);
   });
 };
+
+// login section
+
+document.getElementById("loginForm").addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  if (username =="" || password == "") {
+    alert("Username and password are required");
+    return;
+  }
+
+  if (password !== "123456") {
+    alert("Incorrect password");
+    return;
+  }
+
+  alert("Login Successful");
+  
+});
+
 
 loadBtn("level_no");
 loadButton();
