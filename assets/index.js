@@ -72,7 +72,7 @@ const displayBtn = (btns) => {
                 <p>${singleButton.meaning} / ${singleButton.pronunciation}</p>
               </div>
               <div class="flex items-center justify-between">
-                <div onclick="handleDetails('singleButton.id')"><i class="fa-solid fa-circle-info"></i></div>
+                <div onclick="my_modal_1.showModal()"><i class="fa-solid fa-circle-info"></i></div>
                 <div><i class="fa-solid fa-volume-low"></i></div>
               </div>
             </div>
@@ -91,7 +91,7 @@ document.getElementById("loginForm").addEventListener("click", function (e) {
   const username = document.getElementById("username").value.trim();
   const password = document.getElementById("password").value;
 
-  const loginSection = document.getElementById("loginSection"); // লগইন সেকশন
+  const loginSection = document.getElementById("loginSection"); 
   const navbar = document.getElementById("display"); // Navbar
   const buttonContainer = document.getElementById("button-container"); // Vocabulary Section
 
@@ -107,11 +107,11 @@ document.getElementById("loginForm").addEventListener("click", function (e) {
 
   alert("✅ Login Successful! Welcome, " + username);
 
-  // লগইন সফল হলে, লগইন সেকশন লুকাবে এবং Navbar দেখাবে
+
   loginSection.style.display = "none";
   navbar.style.display = "block";
 
-  // Vocabulary Section স্ক্রল করবে
+  
   buttonContainer.scrollIntoView({ behavior: "smooth" });
 });
 

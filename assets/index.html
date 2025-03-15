@@ -19,14 +19,18 @@
     <header>
       <div>
         <!-- nav section -->
-        <nav  id="display" class="flex justify-between items-center hidden my-5">
+        <nav id="display" class="flex justify-between items-center hidden my-5">
           <div class="flex items-center gap-1">
             <h1 class="font-bold text-2xl text-black">English</h1>
             <img src="logo.png" alt="" />
             <h2 class="font-bold text-2xl text-black">জানালা</h2>
           </div>
           <div id="loginSection" class="flex items-center gap-3">
-            <button onclick="showSection2()" id="section1" class="btn hover:bg-blue-700">
+            <button
+              onclick="showSection2()"
+              id="section1"
+              class="btn hover:bg-blue-700"
+            >
               <img src="fa-circle-question.png" alt="" />FAQ
             </button>
             <button class="btn hover:bg-blue-700">
@@ -104,21 +108,22 @@
       </section>
 
       <!-- spinar -->
-       <section class="my-5 text-center" id="spiner">
+      <section class="my-5 text-center" id="spiner">
         <span class="loading loading-spinner loading-xs"></span>
-<span class="loading loading-spinner loading-sm"></span>
-<span class="loading loading-spinner loading-md"></span>
-<span class="loading loading-spinner loading-lg"></span>
-<span class="loading loading-spinner loading-xl"></span>
-       </section>
+        <span class="loading loading-spinner loading-sm"></span>
+        <span class="loading loading-spinner loading-md"></span>
+        <span class="loading loading-spinner loading-lg"></span>
+        <span class="loading loading-spinner loading-xl"></span>
+      </section>
 
       <!-- No data section add -->
       <section
         class="text-2xl font-bold text-center p-2 bg-blue-200"
         id="noDataSection"
       >
-        <img class="mx-auto" src="alert-error.png" alt="">
-      আপনি এখনো কোন Lesson Select করেন নি <br> একটি Lesson Select করুন.
+        <img class="mx-auto" src="alert-error.png" alt="" />
+        আপনি এখনো কোন Lesson Select করেন নি <br />
+        একটি Lesson Select করুন.
       </section>
 
       <section>
@@ -128,7 +133,8 @@
           </h1>
 
           <!-- according -->
-          <div id="section2"
+          <div
+            id="section2"
             class="collapse collapse-plus bg-base-100 border border-base-300"
           >
             <input type="radio" name="my-accordion-3" checked="checked" />
@@ -197,6 +203,23 @@
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <!-- modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn hidden" onclick="my_modal_1.showModal()">open modal</button>
+        <dialog id="my_modal_1" class="modal">
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Hello!</h3>
+            <p class="py-4">Press ESC key or click the button below to close</p>
+            <div class="modal-action">
+              <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn">Close</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
       </section>
     </main>
 
