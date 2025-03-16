@@ -96,16 +96,16 @@ document.getElementById("loginForm").addEventListener("click", function (e) {
   const buttonContainer = document.getElementById("button-container"); // Vocabulary Section
 
   if (username === "") {
-    alert("⚠️ Username is required!");
+    alert("Username is required!");
     return;
   }
 
   if (password !== "123456") {
-    alert("❌ Incorrect Password! Try Again.");
+    alert("Incorrect Password! Try Again.");
     return;
   }
 
-  alert("✅ Login Successful! Welcome, " + username);
+  alert("Login Successful! Welcome, " + username);
 
 
   loginSection.style.display = "none";
